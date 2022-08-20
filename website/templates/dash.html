@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Graph Test</h1>
+    <div id="chart" class="chart" ”></div>
+  </body>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript">
+    var graphs = {{graph | safe}};
+    Plotly.plot('chart',graphs,{});
+  </script>
+</html>
